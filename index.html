@@ -106,22 +106,26 @@
   <h2 class="heading">My <span>Education</span></h2>
   <div class="education-container">
 
+    <!-- B.Tech -->
     <div class="edu-box">
-      <h3>B.Tech in Computer Science and Engineering (Data Science)</h3>
-      <p>GITAM University, Bengaluru | 2021–2025</p>
+      <img src="assets/btech.jpg" alt="B.Tech Image">
+      <h3>GITAM University, Bengaluru</h3>
+      <p>B.Tech in Computer Science and Engineering (Data Science) | 2021–2025</p>
       <p><strong>CGPA:</strong> 8.39</p>
     </div>
 
+    <!-- Intermediate -->
     <div class="edu-box">
-      <h3>Intermediate</h3>
-      <p>Sri Vivekananda Junior College, Chittoor</p>
+      <img src="assets/college.jpg" alt="Intermediate College">
+      <h3>Sri Vivekananda Junior College, Chittoor</h3>
       <p>Board of Intermediate Education Andhra Pradesh | 2019–2021</p>
       <p><strong>Percentage:</strong> 88.5%</p>
     </div>
 
+    <!-- School -->
     <div class="edu-box">
-      <h3>School</h3>
-      <p>Ravindra Bharathi School, Chittoor</p>
+      <img src="assets/school.jpg" alt="School">
+      <h3>Ravindra Bharathi School, Chittoor</h3>
       <p>Board of Secondary Education Andhra Pradesh | 2019</p>
       <p><strong>CGPA:</strong> 10</p>
     </div>
@@ -130,69 +134,215 @@
 </section>
 
 
+
     <!-- PROJECTS -->
     <section class="projects" id="projects">
   <h2 class="heading">My <span>Projects</span></h2>
   <div class="project-container">
 
+    <!-- Project 1: Automated Paper Correction -->
     <div class="project-box">
+      <img src="assets/project-autoeval.jpg" alt="Automated Paper Correction Project">
       <h3>Automated Paper Correction</h3>
       <p>
         Automates evaluation of descriptive and handwritten answer scripts using NLP and OCR. 
         Uses Hidden Markov Models and Decision Trees to ensure unbiased grading.
       </p>
-      <p>
-        <a href="https://github.com/maheshbabu1807/AutomationEvaluation" target="_blank">View on GitHub</a>
-      </p>
+      <div class="btn-container">
+        <a href="https://github.com/maheshbabu1807/AutomationEvaluation" target="_blank" class="btn">View on GitHub</a>
+      </div>
     </div>
 
+    <!-- Project 2: Piano -->
     <div class="project-box">
+      <img src="assets/project-piano.jpg" alt="Piano Project">
       <h3>Piano</h3>
       <p>
         A simple website where users can practice Piano online using HTML, CSS, and JavaScript.
       </p>
-      <p>
-        <a href="https://github.com/maheshbabu1807/Piano_Project" target="_blank">View on GitHub</a> | 
-        <a href="https://maheshbabu1807.github.io/Piano_Project/" target="_blank">Live Demo</a>
-      </p>
+      <div class="btn-container">
+        <a href="https://github.com/maheshbabu1807/Piano_Project" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://maheshbabu1807.github.io/Piano_Project/" target="_blank" class="btn">Live Site</a>
+      </div>
     </div>
 
   </div>
+
+  <style>
+    .projects {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+      border-radius: 10px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .project-box {
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #00fff7;
+      border-radius: 15px;
+      padding: 20px;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 0 15px #00fff7;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #00fff7;
+    }
+
+    .project-box img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-box h3 {
+      font-size: 1.5rem;
+      color: #00fff7;
+      margin-bottom: 10px;
+    }
+
+    .project-box p {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00fff7;
+      color: #000;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00e6d4;
+      transform: translateY(-3px);
+    }
+  </style>
 </section>
 
 
+
     <!-- CERTIFICATES -->
-    <section class="certificates" id="certificates">
+    <!-- CERTIFICATES -->
+<section class="certificates" id="certificates">
   <h2 class="heading">My <span>Certificates</span></h2>
   <div class="cert-container">
 
     <div class="cert-box">
+      <i class='bx bx-certification'></i>
       <h3>Introduction to Object-Oriented Programming with Java</h3>
       <p>Coursera</p>
     </div>
 
     <div class="cert-box">
+      <i class='bx bx-code-block'></i>
       <h3>HTML, CSS & JavaScript Certificate</h3>
       <p>DevTown</p>
     </div>
 
     <div class="cert-box">
+      <i class='bx bx-bar-chart-alt'></i>
       <h3>Power BI for Beginners</h3>
       <p>Simplilearn</p>
     </div>
 
     <div class="cert-box">
+      <i class='bx bx-brain'></i>
       <h3>Generative AI Professional Certificate</h3>
       <p>Oracle</p>
     </div>
 
     <div class="cert-box">
+      <i class='bx bx-coffee'></i>
       <h3>Fundamentals of Java Programming</h3>
       <p>FacePrep</p>
     </div>
 
   </div>
+
+  <style>
+    .certificates {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+      border-radius: 10px;
+    }
+
+    .cert-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .cert-box {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00fff7;
+      border-radius: 15px;
+      width: 250px;
+      padding: 25px 15px;
+      box-shadow: 0 0 15px #00fff7;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cert-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00fff7;
+    }
+
+    .cert-box i {
+      font-size: 3rem;
+      color: #00fff7;
+      margin-bottom: 15px;
+    }
+
+    .cert-box h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .cert-box p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .heading span {
+      color: #00fff7;
+    }
+  </style>
 </section>
+
 
 
     <!-- CONTACT -->
