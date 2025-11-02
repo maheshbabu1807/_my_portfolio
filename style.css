@@ -1,221 +1,221 @@
-/* ===========================
-   Education Section
-=========================== */
-.education {
-  background: #000;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0c10;
   color: #fff;
-  text-align: center;
-  padding: 80px 0;
-  border-radius: 10px;
 }
 
-.education-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.edu-box {
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid #00fff7;
-  border-radius: 15px;
-  padding: 20px;
-  width: 80%;
-  max-width: 700px;
-  box-shadow: 0 0 15px #00fff7;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.edu-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px #00fff7;
-}
-
-.edu-box img {
+/* Header */
+.header {
+  position: fixed;
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  top: 0;
+  left: 0;
+  background: #1f2833;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  z-index: 100;
 }
 
-.edu-box h3 {
-  font-size: 1.5rem;
-  color: #00fff7;
-  margin-bottom: 10px;
+.logo {
+  color: #66fcf1;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.edu-box p {
-  color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 8px;
+.logo span {
+  color: #45a29e;
 }
 
-/* ===========================
-   Projects Section
-=========================== */
-.projects {
-  background: #000;
+.navbar a {
   color: #fff;
-  text-align: center;
-  padding: 80px 0;
-  border-radius: 10px;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
 }
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+.navbar a:hover,
+.navbar a.active {
+  color: #66fcf1;
 }
 
-.project-box {
-  background: rgba(0, 0, 0, 0.85);
-  border: 2px solid #00fff7;
-  border-radius: 15px;
-  padding: 20px;
-  width: 80%;
-  max-width: 700px;
-  box-shadow: 0 0 15px #00fff7;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+#menu-icon {
+  font-size: 28px;
+  color: #fff;
+  display: none;
 }
 
-.project-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 25px #00fff7;
+/* Sections */
+section {
+  padding: 100px 10%;
 }
 
-.project-box img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.project-box h3 {
-  font-size: 1.5rem;
-  color: #00fff7;
-  margin-bottom: 10px;
-}
-
-.project-box p {
-  color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.btn-container {
+/* Home */
+.home {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.home-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid #66fcf1;
+  object-fit: cover;
+}
+
+.home-content h3 {
+  font-size: 1.6rem;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  color: #66fcf1;
+}
+
+.home-content p {
+  max-width: 500px;
+  margin: 15px 0;
+  color: #c5c6c7;
 }
 
 .btn {
   display: inline-block;
-  background: #00fff7;
-  color: #000;
+  background: #45a29e;
+  color: #fff;
   padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 8px;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #00e6d4;
-  transform: translateY(-3px);
+  background: #66fcf1;
+  color: #000;
 }
 
-/* ===========================
-   Certificates Section
-=========================== */
-.certificates {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 80px 0;
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 250px;
   border-radius: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.heading span {
+  color: #66fcf1;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skills-box {
+  background: #1f2833;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.skills-box:hover {
+  background: #45a29e;
+}
+
+.skills-box i {
+  font-size: 3rem;
+  color: #66fcf1;
+}
+
+/* Education, Projects, Certificates */
+.education-container, .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.edu-box, .project-box {
+  background: #1f2833;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 .cert-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
+  gap: 20px;
 }
 
-.cert-box {
-  background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #00fff7;
-  border-radius: 15px;
+.cert-container img {
   width: 250px;
-  padding: 25px 15px;
-  box-shadow: 0 0 15px #00fff7;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.cert-box:hover {
+.cert-container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #00fff7;
 }
 
-.cert-box i {
-  font-size: 3rem;
-  color: #00fff7;
-  margin-bottom: 15px;
-}
-
-.cert-box h3 {
-  font-size: 1.1rem;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.cert-box p {
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-/* ===========================
-   Contact Section
-=========================== */
-.contact {
-  text-align: center;
-  padding: 80px 0;
-}
-
-.contact-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background: #111218;
-  padding: 28px 40px;
-  border: 2px solid #2c2c2c;
-  border-radius: 45px;
-  width: fit-content;
+/* Contact */
+.contact form {
+  max-width: 600px;
   margin: auto;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
-.contact-item {
+.input-box {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 22px;
-  border-radius: 20px;
-  background: #181a20;
-  border: 1px solid #2f2f2f;
-  text-decoration: none;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background: #1f2833;
+  border: none;
+  border-radius: 5px;
   color: white;
-  font-size: 1rem;
-  transition: 0.3s ease;
 }
 
-.contact-item i {
-  font-size: 1.2rem;
-}
-
-.contact-item:hover {
-  background: #22242b;
-  transform: translateY(-3px);
+/* Footer */
+.footer {
+  background: #1f2833;
+  text-align: center;
+  padding: 20px;
 }
